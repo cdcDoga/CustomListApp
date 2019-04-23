@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomListApp.DetailPage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Padding="15" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                
+
+                <Label Text="{Binding Name}" x:Name="item_name" TextColor="{StaticResource BurgundyHeader}" />
+                
+                <Label Text="{Binding Category}" x:Name="item_category" TextColor="{StaticResource LightTextColor}" />
+
+                <Image Source="{Binding Image}" x:Name="item_image" HorizontalOptions="FillAndExpand" />
+
+                <Label Text="{Binding Info}" x:Name="item_info" TextColor="{StaticResource LightTextColor}" />
+
+                <Button Text="DISMISS" HorizontalOptions="FillAndExpand" Clicked="Dismiss" />
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
